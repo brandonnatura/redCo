@@ -1,0 +1,87 @@
+.divContentLoginPie .ui-btn.ui-shadow.ui-corner-all{
+	font-family: "OpenSans-CondLight", sans-serif;
+	font-size: 1.2em;
+ }
+#btnIngresar{
+	border-radius: 0px;
+	background-color: #fff;
+	color:#942784;
+	text-shadow:none !important;	
+	width: 150px;
+	float: left;
+	border-radius: 5px;
+}
+
+ #btnCerrarSesion{
+	border-radius: 0px;
+	background-color: #fff;
+	color:#757474;
+	text-shadow:none !important;	
+	width: 150px;
+	float: left;
+	border-radius: 5px;
+}
+#btnvVolver{
+	border-radius: 0px;
+	background-color: #fff;
+	color:#757474;
+	text-shadow:none !important;	
+	width: 150px;
+	float: left;
+	border-radius: 5px;
+}
+
+
+
+
+#btnEnviar {
+    border-radius: 0px;
+    background-color: #fff;
+    color: #757474;
+    text-shadow: none !important;
+    width: 150px;
+    float: left;
+    border-radius: 5px;
+}
+
+#btnAtras{
+	border-radius: 0px;
+	background-color: rgba(250, 250, 250, 0);
+	color:#FFF;
+	text-shadow:none !important;	
+	width: 100px;
+	margin-left: 10px;
+	border: 0px;
+	float: left;
+	box-shadow: 0 0px 0px;
+}
+.btnPqrd{
+	background-color: #faac17 !important;
+    /*color: #FFF !important;*/
+    font-family: FuturaStdHeavy !important;
+    font-size: 1.1em !important;	
+}
+
+.pTitulo{
+	text-align: center;
+	font-family: FuturaStdHeavy;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.1em;
+}
+.aCentro{
+	border-left: solid 2px #ef8126;
+	border-right: solid 2px #ef8126;
+}
+.aIzq{
+	border-right: solid 2px #ef8126;
+}
+
+a, 
+a:hover,
+a:visited{
+	color:inherit;
+	text-decoration: none;
+};
+
+

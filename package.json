@@ -1,0 +1,28 @@
+{
+    "name": "co.gov.minminas.redconexiones",
+    "version": "1.0",
+    "displayName": "Red Conexiones",
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-whitelist": {},
+            "phonegap-plugin-push": {
+                "ANDROID_SUPPORT_V13_VERSION": "27.+",
+                "FCM_VERSION": "11.6.2"
+            }
+        }
+    },
+    "dependencies": {
+        "cordova-android": "^7.1.2",
+        "cordova-ios": "^4.5.5",
+        "cordova-plugin-inappbrowser": "~1.7.1",
+        "cordova-plugin-whitelist": "1",
+        "cordova-support-google-services": "^1.1.0",
+        "phonegap-plugin-multidex": "^1.0.0",
+        "phonegap-plugin-push": "^2.2.3"
+    }
+}

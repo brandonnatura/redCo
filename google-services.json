@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "173404398879",
+    "firebase_url": "https://redconexiones-push.firebaseio.com",
+    "project_id": "redconexiones-push",
+    "storage_bucket": "redconexiones-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173404398879:android:9dca8a67597a94b6",
+        "android_client_info": {
+          "package_name": "co.gov.minminas.redconexiones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173404398879-ib1ge9qrcdp7rqj43lndrv9ln66k8f2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_Qlw0wIxCZB0QpZfnuPRe92HSVJQSAa8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

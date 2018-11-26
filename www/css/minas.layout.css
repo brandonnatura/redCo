@@ -1,0 +1,1357 @@
+@font-face{
+	font-family:'FuturaStdHeavy';
+	src:url('../fonts/FuturaStd-Heavy.otf');
+}
+
+@font-face{
+	font-family: 'FuturaBook';
+	src:url('../fonts/Futura-Std-Book_19044.ttf');
+}
+@font-face{
+	font-family: 'OpenSans-CondLight';
+	src:url('../fonts/OpenSans-CondLight.ttf');
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src:url('../fonts/Lato-Light.ttf');
+}
+body{
+	background-color: #FFF;
+	font-family: "Lato-Light", sans-serif;
+}
+input, select, textarea, .ui-select .ui-btn,.ui-checkbox .ui-btn, .ui-radio .ui-btn{
+	font-family: "Lato-Light", sans-serif !important;
+}
+a{
+	color:#e26031 !important;
+	text-shadow:none;
+}
+a:visited{
+	color:#e26031 !important;
+}
+.ui-mobile .ui-page-active{
+	/*background-image: url(../img/fondoChat.png);*/
+    background-size: cover;
+}
+
+
+#divLogoMinMinasSplash{
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 100vh;
+	background-image: url('images/logo-minminas1.png');
+	background-size: 40%;
+}
+
+.ui-menu .ui-menu-item{ 
+	border: 1px solid #c5c5c5 !important;
+}
+
+#ui-id-1{
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 155px;
+    font-family: "OpenSans-CondLight", sans-serif;
+    width: 94% !important;
+}
+
+
+#goMicrophone {
+	margin-left: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	text-align: center;
+    width: 36px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* color: #faac17; */
+    color: #49403A;
+    border: none !important;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    display: none;
+}
+
+.goTextoVoz {
+	padding: 0px !important;
+	margin: 0px !important;
+	text-align: center;
+    width: 26px !important;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* color: #faac17; */
+    color: #49403A;
+    border: none !important;
+    background-color: rgba(0,0,0,0) !important;
+    box-shadow: none;
+    position: static;
+}
+
+.goTextoVozStop {
+	padding-right: 2px !important;
+}
+
+.iconoGeneral {
+	padding: 10px 0px 0px 0px !important;
+	margin: 0px 0px 0px 0px !important;
+	text-align: center !important;
+    width: 26px !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* color: #faac17; */
+    color: #bdbdbd !important;
+    border: none !important;
+    background-color: rgba(0,0,0,0) !important;
+    box-shadow: none;
+    float: left;
+    text-overflow: inherit !important;
+}
+
+.iconoGeneralCentro{
+	margin: 0px 10px 0px 10px !important;
+}
+
+#divContentLogin,
+#divContentMain{
+	margin:0 auto;
+	padding-top: 6px;
+	width: 90%;
+	text-align: center;
+	padding-bottom: 5px
+}
+
+	#divContentLogin input,
+	#divContentLogin button{
+		width: 100%;
+	}
+
+.divLoginMinMinas,
+.divImgAsesor{
+	margin-top: 30px;
+}
+#divContentLoginCabe{
+	padding: 4% 18%;
+	background: #FFF;
+}
+.divLoginMinMinas{
+	margin-bottom: 20%;
+	
+}
+
+.divLoginMinMinas img{
+	width: 100%;
+}
+
+.divNavegacion{
+	background-color: #fff;
+	color: #4D4C4C;
+	position: fixed;
+	margin: 0px;
+	z-index: 999999;
+	bottom: 0px;
+	width: 100%;
+	/*font-family:;*/
+	font-weight: normal;
+}
+
+	.divNavegacion ul{
+		list-style: none;
+		padding: 0px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+		.divNavegacion li{
+			text-align: center;
+			list-style: none;
+			width: 32%;
+			display: inline-block;
+		}
+
+			.divNavegacion li a{
+				text-align: center;
+				text-decoration: none;
+				color: #FFF;
+			}
+
+				.divNavegacion li a p{
+					text-align: center;
+					margin: 3px 0px 3px 0px;
+				}
+
+.cabeceraBarra{
+		height: 9px;
+}
+.cabeceraBarra1{
+	float:left;
+	height: 100%;
+	width: 85%;
+	background-color: #962684;
+}
+.cabeceraBarra2{
+	float:left;
+	height: 100%;
+	width: 6%;
+	background-color: #0990b2;
+}
+.cabeceraBarra3{
+	float:left;
+	height: 100%;
+	width: 1%;
+	background-color: #c0e4eb;
+}
+.cabeceraBarra4{
+	float:left;
+	height: 100%;
+	width: 2%;
+	background-color: #e6da87;
+}
+.cabeceraBarra5{
+	float:left;
+	height: 100%;
+	width: 6%;
+	background-color: #92ad28;
+}
+
+.cabecera{
+	position: fixed;
+	z-index: 999999;
+	top:0;
+	background-color: #fff;
+	/*border-bottom: solid 3px #ef8126;*/
+	color:#FFF;
+	padding: 1% 0px 0 0px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	vertical-align: middle;
+	max-height: 200px;
+}
+
+	.cabecera::after{
+		content:'';
+		clear: both;
+	}
+
+	.cabecera a{
+		color:#FFF !important;
+	}
+.cabeceraIzq{
+	float:left;
+	width: 25%;
+	margin-left: 10px;
+}
+.cabeceraCen{
+	float:left;
+	width: 50%;
+	text-align: center;
+	/*padding-bottom: 6%;*/
+}
+.cabeceraDer{
+	/*float:left;
+	width: 25%;*/
+	position: absolute;
+    text-align: right;
+    right: 0px;
+    margin-right: 10px;
+}
+
+.imgCabeceraCen{
+	width: 335px;
+}
+
+.divAtras{
+	color: #FFF !important;
+	float: left;
+	width: 29%;
+	vertical-align: middle;
+	margin-top: 20px;
+	margin-left: 5px;
+
+}
+textarea.ui-mini {
+    margin: 0px;
+}
+
+.divAtras span{
+	margin-right: 7px;
+}
+
+
+.divImagenHeader{
+	vertical-align: middle;
+	float: right;
+	width: 65%;
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 1px;
+}
+
+
+	.divImagenHeader div{
+		display: inline-block;
+		vertical-align: middle;
+		/*margin-right: 7px;*/
+		position: relative;
+	}
+
+	.divImagenHeader img{
+		display: inline-block;
+	}
+
+	.loginLi{
+		    color: #CC6715 !important;
+	}
+
+
+
+/*****ESTILOS DEL CHAT*********/
+#divTextChat{
+	background-color: #C9B59B;
+	color: #FFF;
+	position: fixed;
+	margin: 0px;
+	z-index: 999999;
+	bottom: 0px;
+	width: 100%;
+	font-family:FuturaBook;
+	font-weight: normal;
+	padding: 5px 10px 5px 10px;
+	vertical-align: top;
+}
+.textAreaChat{
+	resize:none !important;
+	/*height:scrollHeight !important;*/
+	border: none !important;
+	box-shadow: inset 0px 0px 0px 0;
+	width: 96% !important;
+	max-height: 46px;
+	height: 46px !important;
+}
+
+	#divTextChat:after{
+		clear: both;
+	}
+
+
+	#divTextChat #txtChat{
+		/*width: 80%;
+		max-height: 80px;*/
+		float: left;
+		/*margin-left: 25px;*/
+	}
+	.divTextChatIzq{
+		width: 96%;
+		float: left;
+	}
+	.divTextChatDer{
+		width: 4%;
+		float: right;
+	}
+
+
+	#divTextChat #btnEnviarChat{
+		width: 32px !important;
+		float: left;
+		margin: 0px;
+		margin-top: 7px;
+		/*background-image: url('images/b-enviar-landscape.png');*/
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		color:#49403A;
+		/*border:none !important;*/
+		/*background-color: rgba(0,0,0,0);*/
+		box-shadow: none;
+		padding-left: 2px;
+	    padding-right: 0px;
+	    padding-top: 0px;
+	    padding-bottom: 2px;
+	    text-align: center;
+	}
+#btnEnviarChat{
+	border-radius: 200px 200px 200px 200px !important;
+	-moz-border-radius: 200px 200px 200px 200px !important;
+	-webkit-border-radius: 200px 200px 200px 200px !important;
+	border: 1px solid #49403A;
+}
+.divBtnEnviarChat{
+	width: 73px;
+	height: 46px;
+	/*margin-top: 6px;*/
+	background: #fff;
+	position: absolute;
+	left: 91%;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	/*border: 1px solid rgb(169, 169, 169);*/
+}
+.divChat{
+	/*background: #E7EDF2;*/
+	/*background-image: url(../img/fondoChat.png);*/
+}
+.divContenidoChat{
+	margin-top: 158px;
+	margin-bottom: 65px;
+}
+
+#divMensajes{
+	vertical-align: bottom;
+	overflow-y:overlay;
+	/*padding-bottom: 60px;
+	margin-top: 80px;*/
+}
+
+#divDirectorio{
+	vertical-align: bottom;
+	overflow-y:auto;
+	padding-bottom: 80px;
+	padding-top: 70px;
+}
+
+.mensaje{
+	clear: both;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	white-space: pre; /* CSS 2.0 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3.0 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap; /* HP */
+	word-wrap: break-word; /* IE 5+ */
+}
+
+.mensajeUsuario,
+.mensajeMaquina{
+	font-family: 'Lato-Light', sans-serif;
+	font-size: 1.1em;
+	padding: 10px 15px 10px 20px;
+	max-width: 60%;
+	border-radius: 20px;
+}
+
+/*.mensajeUsuario{
+	background-color: #F5F5F5;
+	border: 1px solid #e0e0e0;
+	text-align: right;
+	margin: 10px 20px 10px 10px;
+	float: right;
+}*/
+
+/*.mensajeMaquina{
+	background-color: #F7F1DA;
+	border: 1px solid #e0e0e0;
+	text-align: left;
+	margin: 10px 10px 10px 20px;
+	float: left;
+}*/
+.mensajeMaquina
+{
+	margin: 10px 10px 10px 20px;
+	float: left;
+	text-align: left;
+	position: relative;
+	background: #F7F1DA;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #e0e0e0;
+}
+
+.mensajeMaquina:after
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #F7F1DA;
+	display: block;
+	width: 0;
+	z-index: 1;
+	left: -14px;
+	top: 19px;
+}
+
+.mensajeMaquina:before
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #e0e0e0;
+	display: block;
+	width: 0;
+	z-index: 0;
+	left: -16px;
+	top: 19px;
+}
+
+.mensajeUsuario
+{
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	text-align: right;
+	margin: 10px 20px 10px 10px;
+	float: right;
+	position: relative;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.mensajeUsuario:after
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 0 15px 15px;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	right: -14px;
+	top: 19px;
+}
+
+.mensajeUsuario:before
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 0 15px 15px;
+	border-color: transparent #e0e0e0;
+	display: block;
+	width: 0;
+	z-index: 0;
+	right: -16px;
+	top: 19px;
+}
+
+.divContentMain{
+	/*background-image: url(../img/fondoChat.png);*/
+	background-size: cover;
+}
+
+.limpiar{
+	clear: both;
+	opacity: 0;
+	margin: 0px;
+	padding: 0px;
+}
+.divDetalle{
+    border:1px solid #CCC;
+    font-size:13px;
+    padding:10px;
+}
+#listaChat{
+    vertical-align: bottom;
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+.fechaTama{
+    font-size:12px !important;
+    color:#faac17;
+}
+
+.cerrarSession{
+	border-radius: 35px;
+    padding: 0px 5px 0px 5px;
+    background-color: #fff;
+    color: #000 !important;
+}
+.divAtrasReload{
+	width: 105px !important;
+}
+.divImagenHeaderReload{
+	width: 50% !important;
+}
+.checkReg {
+	text-align: justify;
+    border: 1px solid #dfe0e6;
+    border-radius: 2px;
+    padding: 10px 24px 10px 24px;
+    font-size: 0.82em;
+}
+.divInf{
+	background-color: #E9EAEB;
+}
+#divNormatividad{
+	padding: 0px 5px 0px 5px;
+}
+
+.divRegistro{
+	padding: 0px 5px 0px 5px;
+}
+
+.divNavegacionMenu{
+	width: 100%;
+	font-family: "OpenSans-CondLight", sans-serif;
+}
+.divNavegacionMenuIzq{
+	width: 48%;
+	float: left;
+	border-bottom: solid 1px #996A43;
+	background-color: #fff;
+}
+.divNavegacionMenuDer{
+	width: 48%;
+	float: right;
+	border-bottom: solid 1px #996A43;
+	background-color: #fff;
+}
+.divNavegacionMenuOpc{
+	/*margin: 10px 0px 10px 15px;*/
+}
+
+.menuOpctitle{
+	    margin-left: 20px;
+}
+.menuOpcImg{
+	height: 60px;
+}
+.ultimoDivMenuOpc{
+		    display: none;
+}
+.ultimoDivMenu {
+    height: 82px;
+}
+.divContentLogin{
+	/* background-image: url(../img/fondoChat.png); */
+}
+.divContentLoginPie{
+	text-align: center;
+	/*position: fixed;*/
+    margin: 0px;
+    z-index: 999999;
+    bottom: 0px;
+    width: 100%;
+}
+.divContentLoginPieBoton{
+	padding: 10px 0px 10px 0px;
+	display: inline-block;
+}
+.ui-input-text{
+	background-color: #fff;
+    border-color: #ddd;
+}
+.ui-input-text input{
+    min-height: 3em !important;
+    line-height: 2.4em !important;
+}
+.ui-input-search{
+	background-color: #fff !important;
+    border-color: #ddd !important;
+}
+.ui-input-search input{
+	min-height: 3em !important;
+    line-height: 2.4em !important;
+}
+.ui-page-theme-a .ui-body-inherit{
+	background-color: #fff !important;
+    border-color: #ddd !important;
+}
+
+/*.inAppBrowserWrap {
+  background-color: rgba(0,0,0,0.75);
+  color: rgba(235,235,235,1.0);
+}
+.inAppBrowserWrap menu {
+  overflow: auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+.inAppBrowserWrap menu li {
+  font-size: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  background: rgba(30,30,30,0.50);
+}
+.inAppBrowserWrap menu li.disabled {
+    color: #777;
+}*/
+
+/************Media Query***************/
+
+@media (min-width:1367px){
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+
+
+@media (max-width:1366px){
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 75%;
+		margin: 0 auto;
+	}
+.cabeceraCen{
+	padding-bottom: 0%;
+}
+
+
+}
+@media (max-width:1280px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 75%;
+		margin: 0 auto;
+	}
+
+
+	.cabeceraBarra{
+		/* height: 7px; */
+		/*border-bottom: solid 7px #ef8126;*/
+	}
+	.imgCabeceraCen{
+	    width: 330px;
+	}
+
+	.divAtras{
+		font-size: 1.6em;
+		font-weight: normal;
+		margin-top:10px;
+	}
+
+	.divAtras span{
+		margin-right: 13px;
+		width: 0.6em;
+	}
+	.divContenidoChat {
+	    margin-top: 147px;
+	}
+
+	.divImagenHeader div{
+		font-size: 1.6em;
+		top: 0px;
+	}
+
+
+}
+
+/*Para tablets en landscape*/
+@media (max-width:1030px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 80%;
+	}
+
+	.cabeceraBarra{
+		/* height: 7px; */
+		/*border-bottom: solid 7px #ef8126;*/
+	}
+	.divContenidoChat {
+	    margin-top: 170px;
+	}
+
+	.divTextChatIzq {
+	    width: 95%;
+	}
+
+	.divTextChatDer {
+	    width: 5%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 89%;
+	}
+
+	.imgCabeceraCen{
+	    width: 310px;
+	}
+
+	.mensajeUsuario,
+	.mensajeMaquina{
+		max-width: 70%;
+	}
+.cabeceraCen { 
+    padding-bottom: 2%;
+}
+
+}
+@media (max-width:768px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 70%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 90%;
+	}
+
+
+	.cabeceraBarra{
+		/* height: 9px; */
+		/*border-bottom: solid 5px #ef8126;*/
+	}
+	.imgCabeceraCen{
+	    width: 300px;
+	}
+
+	.divAtras{
+		font-size: 1.4em;
+		font-weight: normal;
+		margin-top:15px;
+	}
+
+	.divAtras span{
+		margin-right: 13px;
+		width: 0.5em;
+	}
+
+	.divImagenHeader div{
+		font-size: 1.4em;
+		top: 0px;
+	}
+	.divContenidoChat {
+	    margin-top: 153px;
+	}
+
+	.divTextChatIzq {
+	    width: 93%;
+	}
+	.divTextChatDer {
+	    width: 7%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 87%;
+	}
+
+
+	.mensajeUsuario,
+	.mensajeMaquina{
+		max-width: 80%;
+	}
+
+	#divTextChat #txtChat{
+		/*width: 75%;*/
+	}
+
+	#divTextChat #btnEnviarChat{
+		width: 16%;
+	}
+}
+@media (min-height: 686px){
+	.divContentLoginPie{
+		position: fixed;
+	}
+}
+@media (max-width:640px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 83%;
+	}
+
+	#divContentMain{
+		padding-top: 16%;
+	}
+
+	.divLoginMinMinas{
+		width: 90%;
+	}
+	.divContenidoChat {
+	    margin-top: 176px;
+	}
+
+	.divTextChatIzq {
+	    width: 90%;
+	}
+	.divTextChatDer {
+	    width: 10%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 84%;
+	}
+	.menuOpctitle{
+	    margin-left: 15px;
+	    font-size: 17px;
+	}
+	.menuOpcImg{
+		height: 54px;
+	}
+	.ultimoDivMenu{
+		    height: 72px;
+	}
+	.divNavegacionMenuDer {
+	    width: 50%;
+	}
+
+	#divTextChat #txtChat{
+		/*width: 75%;
+		margin-left: 10px;*/
+	}
+
+	#divTextChat #btnEnviarChat{
+		/*width: 25%;*/
+	}
+}
+@media (max-width:600px){
+	.divNavegacionMenuOpc {
+    	padding: 14px 0px 14px 15px;
+ 	}
+	.divNavegacionMenuIzq{
+		width: 100%;
+		float: none;
+	}
+	.divNavegacionMenuDer{
+		width: 100%;
+		float: none;
+	}
+	.ultimoDivMenu{
+    	display: none;
+    }
+	.divLoginMinMinas {
+	    width: 45%;
+	}
+	#divContentMain {
+	    padding-top: 1%;
+	} 
+}
+@media (min-width:600px){
+	.divNavegacionMenuOpc{
+		margin: 10px 0px 10px 15px;
+	}
+	#ui-id-1{
+	    width: 80% !important;
+	}
+}
+@media (max-width:560px){
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 85%;
+	}
+
+	#divContentMain{
+		padding-top: 10%;
+	}
+
+	.divLoginMinMinas{
+		width: 84%;
+	}
+	.divContenidoChat {
+	    margin-top: 140px;
+	}
+
+	.divTextChatIzq {
+	    width: 90%;
+	}
+	.divTextChatDer {
+	    width: 10%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 84%;
+	}
+
+	.menuOpctitle{
+	    margin-left: 20px;
+	}
+	.menuOpcImg{
+		height: 50px;
+	}
+
+	#divTextChat #txtChat{
+		/*width: 75%;
+		margin-left: 10px;*/
+	}
+
+	#divTextChat #btnEnviarChat{
+		/*width: 25%;*/
+	}
+	.divNavegacionMenuOpc {
+    	padding: 8px 0px 8px 15px;
+	}
+}
+
+@media (max-width:480px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 95%;
+		padding-top: 1%;
+	}
+
+	.divLoginMinMinas{
+		/* width: 50%; */
+	}
+
+
+	.divAtras{
+		font-size: 1.2em;
+		font-weight: normal;
+		margin-top:12px;
+		width: 31%;
+    	float: left;
+	}
+	.divAtrasChat{
+	    font-size: 1.5em;
+    	margin-top: 22px;
+	}
+	.divAtras span{
+		margin-right: 13px;
+		width: 0.5em;
+	}
+	.imgCabeceraCen{
+	    width: 106%;
+	}
+
+	.divContenidoChat {
+	    margin-top: 102px;
+	}
+
+	.divImagenHeader div{
+		font-size: 1.2em;
+		top: 0px;
+	}
+
+	.divTextChatIzq {
+	    width: 85%;
+	}
+
+	.divTextChatDer {
+	    width: 15%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 79%;
+	}
+
+	.divNavegacionMenuIzq{
+		width: 100%;
+		float: none;
+	}
+	.divNavegacionMenuDer{
+		width: 100%;
+		float: none;
+	}
+	.menuOpctitle{
+	    margin-left: 20px;
+	}
+	.menuOpcImg{
+		height: 50px;
+	}
+	.ultimoDivMenu{
+		    display: none;
+	}
+
+
+	#divTextChat #txtChat{
+		/*width: 75%;
+		margin-left: 0px;*/
+	}
+
+	#divTextChat #btnEnviarChat{
+		width: 15%;
+	}
+}
+
+@media (max-width:400px){
+
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 95%;
+		padding-top: 1%;
+	}
+
+	.divLoginMinMinas{
+		/* width: 50%; */
+	}
+
+
+	.divAtras{
+		font-size: 1.2em;
+		font-weight: normal;
+		margin-top:12px;
+		width: 31%;
+    	float: left;
+	}
+	.divAtrasChat{
+	    font-size: 1.5em;
+    	margin-top: 22px;
+	}
+	.divAtras span{
+		margin-right: 13px;
+		width: 0.5em;
+	}
+	.imgCabeceraCen{
+	    width: 160px;
+	}
+
+	.divContenidoChat {
+	    margin-top: 87px;
+	}
+
+	.divImagenHeader div{
+		font-size: 1.2em;
+		top: 0px;
+	}
+
+	.divTextChatIzq {
+	    width: 80%;
+	}
+
+	.divTextChatDer {
+	    width: 20%;
+	}
+
+	.divBtnEnviarChat  {
+	    left: 74%;
+	}
+
+	.divNavegacionMenuIzq{
+		width: 100%;
+		float: none;
+	}
+	.divNavegacionMenuDer{
+		width: 100%;
+		float: none;
+	}
+	.menuOpctitle{
+	    margin-left: 20px;
+	}
+	.menuOpcImg{
+		height: 50px;
+	}
+	.ultimoDivMenu{
+		    display: none;
+	}
+
+	#divTextChat #txtChat{
+		/*width: 75%;
+		margin-left: 0px;*/
+	}
+
+	#divTextChat #btnEnviarChat{
+		width: 15%;
+	}
+}
+@media (max-width:320px){
+	#divContentLogin,
+	#divContentMain{
+		margin:0 auto;
+		width: 95%;
+		padding-top: 15px;
+	}
+	
+	.divLoginMinMinas{
+		width: 55%;
+	}
+
+	.imgCabeceraCen{
+	    width: 100%;
+	}
+
+	.cabeceraIzq{
+		margin-left: 2px;
+	}
+	.cabeceraDer{
+		margin-right: 2px;
+	}
+
+	.divNavegacion ul{
+		text-align: center;
+	}
+
+	.divNavegacion li{
+		width: 30%;
+	}
+
+	.divTextChatIzq {
+	    width: 80%;
+	}
+
+	.divNavegacionMenuIzq{
+		width: 100%;
+		float: none;
+	}
+	.divNavegacionMenuDer{
+		width: 100%;
+		float: none;
+	}
+	.menuOpctitle{
+	    margin-left: 20px;
+	}
+	.menuOpcImg{
+		height: 50px;
+	}
+	.ultimoDivMenu{
+		    display: none;
+	}
+
+	.divNavegacion li a{
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+		font-size: 1em;
+	}
+
+		.divNavegacion li a p{
+			text-align: center;
+			margin: 3px 0px 3px 0px;
+			width: 100%;
+		}
+
+			.divNavegacion li a p img{
+				width: 30%;
+			}
+}
+
+
+@media only screen and (min-height: 260px) and (max-height: 479px) {
+	@media screen and (max-width: 560px) {	
+		.menuOpctitle {
+			font-size: 11px;
+		}	
+	}
+	@media screen and (min-width: 561px) {	
+		.menuOpctitle {
+			font-size: 16px;
+		}	
+	}
+	.divNavegacion {
+	    /*position: absolute;
+	    bottom: initial;*/
+	}
+	#divContentMain {
+	    padding: 1px;
+	}
+	.imgCabeceraCen {
+	    width: 50%;
+	}
+	.divContenidoChat {
+	    margin-top: 100px;
+	}
+	.cabeceraCen { 
+		padding-bottom: 2%;
+	}
+	.divNavegacionMenuIzq{
+		width: 48%;
+		float: left;
+		border-bottom: solid 1px #996A43;
+    	background-color: #fff;
+	}
+	.divNavegacionMenuDer{
+		width: 48%;
+		float: right;
+		border-bottom: solid 1px #996A43;
+    	background-color: #fff;
+	}
+	@media screen and (min-height: 330px){
+		#divContentMain {
+		    padding: 10px;
+		}
+	}
+	@media screen and (min-height: 341px){
+		.divLoginMinMinas{
+			width: 45%;
+		}
+	}
+	@media screen and (max-height: 340px){
+		.divLoginMinMinas{
+			width: 32%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px){
+	@media screen and (min-height: 1024px) {	
+		#divContentMain {
+			padding-top: 30%;
+		}	
+	}
+}
+@media screen and (min-width: 1024px){	
+	@media screen and (max-height: 800px){
+		.divContentLoginPie{
+			position: initial !important;
+		}
+	}
+}
+@media screen and (min-height: 500px){
+	#divContentMain{
+			padding-top: 11% !important;
+	}
+}
+
+@media screen and (min-height: 590px){
+	#divContentMain{
+			padding-top: 15% !important;
+	}		
+}
+
+@media screen and (min-height: 660px){
+	#divContentMain{
+			padding-top: 20% !important;
+	}
+}
+
+@media screen and (min-height: 1400px){
+	.divBtnEnviarChat {
+			/*margin-top: 7px;*/
+	}
+}

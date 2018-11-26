@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.4.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/minas.layout.css" />
+        <link rel="stylesheet" type="text/css" href="../css/minas.ui.css" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css" />
+        <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.mobile-1.4.4.min.js"></script>
+        <script type="text/javascript" src="../js/conexiones.js"></script>
+        <script type="text/javascript" src="../js/login/login.model.js"></script>
+        <script type="text/javascript" src="../js/login/login.control.js"></script>
+        <script type="text/javascript" src="../js/login/login.vista.js"></script>
+        <script type="text/javascript" src="../js/app.global.js"></script>
+        <script type="text/javascript" src="../js/app.funciones.js"></script>
+        <script type="text/javascript" src="../js/app.ui.js"></script>
+        <title>Red conexiones</title>
+        <!--script>
+            $(document).on( "click", ".autocomplete li", function() {      
+              var selectedItem = $(this).html();
+              $(this).parent().parent().find('input').val(selectedItem);   
+              $('.autocomplete').hide();     
+            });
+        </script-->
+        <style>
+            .ui-icon-ajax {
+                background-image: url(../css/images/ajax-loader.gif);
+                background-size: 100%;
+            }
+            .ui-listview-filter-inset {
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="divLogin">
+            <div id="divContentLoginCabe">
+                <div class="divLoginMinMinas">
+                    <img src="../img/logo_cabe.png" />
+                </div>                 
+            </div>
+            <div class="row" style="text-align: center; display: none;">
+          <div class="col s12 m6">
+            <div class="card darken-1">
+              <div class="card-content black-text">
+                <span class="card-title black-text">Registration ID</span>
+                <p id="regId">Requested</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+			<div class="cabeceraBarra">
+				<div class="cabeceraBarra1"></div>
+				<div class="cabeceraBarra2"></div>
+				<div class="cabeceraBarra3"></div>
+				<div class="cabeceraBarra4"></div>
+				<div class="cabeceraBarra5"></div>
+			</div>
+            <div class="divContentLogin">   
+                <div id="divContentLogin">            
+                    
+                    <input type="email" data-clear-btn="true" name="txtUsuario" id="txtUsuario" value="" class="logeoEnter" placeholder="Email*" required/>
+                    <input type="password" data-clear-btn="true" name="txtPass" id="txtPass" value="" class="logeoEnter" placeholder="Contraseña*" required/>
+                    <!--<input type="text" data-clear-btn="true" name="txtDocumento" id="txtDocumento" value="" class="logeoEnter" placeholder="Documento de identidad*" required/>-->
+                    <!-- <select id="selDepartamento" data-role="select" required>
+                        <option value="0">Departamento*</option>
+                    </select>
+                    <select id="selMunicipio" data-role="select" required>
+                        <option value="0">Municipio*</option>
+                    </select> -->                    
+                    <!--div>
+                      <ul class="autocomplete" name="txtEntidad" id="txtEntidad"  data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Entidad/Empresa" data-filter-theme="e" required></ul>
+                    </div--> 
+
+                    <!--<div class="checkReg">                                                               
+                        <p>Acepto las <a id="politicasRef"  style="color: #000 !important; text-decoration: underline;">políticas de privacidad de datos</a></p>
+                                
+                        <label>
+                            <input type="checkbox" name="terms1" id="terms1" style="margin: 0px;">Acepto
+                        </label>
+                    </div>-->
+                </div>
+            </div>
+            <div class="divContentLoginPie">
+                <div class="divContentLoginPieBoton"> 
+                    <button id="btnIngresar">INICIAR SESIÓN</button>
+                    <!--<button id="btnCerrarSesion">CERRAR SESIÓN</button>-->                                     
+                </div>
+                 
+            </div>
+            
+            <div class="divContentLoginPie">
+                <div class="divContentLoginPieBoton"> 
+                    <button id="btnvVolver">VOLVER</button>
+                    <!--<button id="btnCerrarSesion">CERRAR SESIÓN</button>-->                                     
+                </div>
+                 
+            </div> 
+
+            <div class="divContentLoginPie">
+                <div class="divContentLoginPieBoton"> 
+                    <button id="btnCerrarSesion">CERRAR SESIÓN</button>
+                    <!--<button id="btnCerrarSesion">CERRAR SESIÓN</button>-->                                     
+                </div>
+                 
+            </div>   
+        </div>
+        <script>
+            var __app = new App(); 
+            var __cnn = new Cnn();
+            document.addEventListener('deviceready', function(){
+                console.log('from deviceready');
+                loginVista.init();
+            }, false);
+            document.addEventListener("backbutton", onBackKeyDown, false); 
+            /*(function($){
+                console.log('from deviceready');
+                loginVista.init();
+            })(jQuery);*/
+        </script>
+    </body>
+</html>

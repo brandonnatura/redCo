@@ -1,0 +1,233 @@
+		@charset "utf-8";
+/* CSS Document */
+*{
+	/*-webkit-user-select: text;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+body{
+	margin:0;
+    padding:2em 0 2em 0;
+	background: url(../img/bg_gradient.jpg) #5BD1DD repeat-x;
+	font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+}
+div#header{
+	position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 4em;
+	display:table;
+	background:#eef2f5;
+	text-align:center;
+	color:#706E6E;
+	-webkit-box-shadow: 0px 5px 8px 0px rgba(150, 150, 150, 0.5);
+	-moz-box-shadow:    0px 5px 8px 0px rgba(150, 150, 150, 0.5);
+	box-shadow:         0px 5px 8px 0px rgba(150, 150, 150, 0.5);
+}
+
+div#footer{
+	position:absolute;
+  	bottom:0;
+  	left:0;
+  	width:100%;
+  	height:3.5em;
+	background: #00496D;
+	display:table;
+}
+
+div#content{
+	padding-top: 4.5em;
+	padding-bottom: 4em
+	/*padding-left: 2%;	*/
+}
+
+.h5Adjust{
+	padding: 0;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.h6Adjust{
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+}
+
+#headCenterLeft{
+	height: 4em;
+	width: 100%;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#headLeft{
+	float:left;
+	height: 4em;
+	display:table;
+	width: 25%;
+}
+
+#headMiddle{
+	float:left;
+	height: 4em;
+	width: 50%;
+	display:table-cell;
+	vertical-align: middle;
+	padding-top:0.5em;
+	
+}
+
+#headCenterRight{
+	height: 4em;
+	width: 100%;
+	display:table-cell;
+	vertical-align: middle;
+	margin-right: -0.5em;
+}
+
+#headRight{
+	float:right;
+	height: 4em;
+	width: 25%;
+	display:table;
+}
+
+#imgMess{
+	float:left;
+	height: 3.5em;
+	width:	20%;
+}
+.adjustImage{
+	vertical-align:central;
+	height: 3.5em;
+}
+
+#inputMess{
+	width: 100%;
+	height: 3.5em;
+	padding-top: 0.5em;
+}
+
+div#imgCont{
+	float: left;
+	width: 10%;
+	margin-right: 2%;
+}
+
+div#txtCont{
+	float:left;
+	width:88%;
+}
+
+.contentTextChart{
+	background: #fff;
+	height: 3em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 1%;
+	margin-right: -2%;
+	width: 98%;
+}
+.imgText{
+	width:51px;
+}
+
+.textInput{
+	width: 98%;
+	float: left;
+	border: none;
+	display: inline;
+	resize: none;
+	height: 3em;
+}
+
+.area_msgs {
+	background: #FFF url(../images/inner_shadow.png) no-repeat top left;
+	border-bottom: 1px solid #DBDBDB;
+	border-right: 1px solid #DBDBDB;
+	display: block;
+	float: left;
+	height: 240px;
+	margin: 0 0 10px 10px;
+	width: 96%;
+	height: 284px;
+	overflow-y: auto;
+}
+
+.area_persona {
+	background: url(../img/flecha_chat2.png) top no-repeat;
+	background-position: 97.8% 100%;
+	border-bottom: none;
+	margin-bottom: 6px;
+	margin-left: 5px;
+	width: 97%;
+	text-align: right;
+	height:0%;
+}
+
+.area_persona p {
+	background: #EEF1F6;
+	-webkit-border-radius: 2px 2px 0px 2px;
+	border-radius: 2px 2px 0px 2px;
+	margin-bottom: 7px;
+	padding: 3px 5px;
+	color: #515559;
+	width: 98%;
+	display: block;
+}
+
+.area_asesor {
+	background: url(../img/flecha_chat.png) top no-repeat;
+	background-position: 0% 100%;
+	border-bottom: none;
+	margin-left: 5px;
+	width: 97%;
+	height:0%;
+}
+
+.area_asesor p {
+	background: #DBE9EC bottom;
+	-webkit-border-radius: 3px 3px 3px 0px;
+	border-radius: 3px 3px 3px 0px;
+	margin-bottom: 7px;
+	padding: 3px 5px;
+	display: block;
+	color: #515559;
+	width: 98%;
+}
+
+div#limpiar{
+	clear:both;
+}
+
+div#contenedor{
+	padding-left:0.2em;
+	padding-right:0.2em;
+	overflow-y:auto;
+}
+
+#contenedor p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+@media screen{
+	body>div#header{
+		position:fixed;
+  	}
+  	body>div#footer{
+		position:fixed;
+  	}
+}
+* html body{
+  	overflow:hidden;
+} 
+* html div#content{
+	height:100%;
+  	overflow:auto;
+}
+
