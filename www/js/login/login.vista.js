@@ -55,7 +55,7 @@ var loginVista = {
             });
             console.log(JSON.stringify(data));
 
-            //Espera de Cola
+            //Espera de Colas
             __dom.ocultarCargador();
             
            
